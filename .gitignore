@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+dist/
+build/
+*.egg-info/
+venv/
+.env
+*.pyc
+
+# API keys — NEVER commit these
+config.py
+.env
+secrets.py
+
+# Data files — share via Google Drive instead
+data/raw/*.csv
+data/processed/*.csv
+data/backtest/*.csv
+
+# Keep empty folder structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/backtest/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
