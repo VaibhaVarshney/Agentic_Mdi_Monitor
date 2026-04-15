@@ -1,0 +1,17 @@
+[
+  {
+    "program": {
+      "name": "Federal Reserve Discount Window",
+      "type": "loan",
+      "speed_days": 2,
+      "requires": [],
+      "max_pct_assets": 0.3,
+      "application_url": "https://www.federalreserve.gov/monetarypolicy/discountrate.htm",
+      "contact": "Your regional Federal Reserve Bank discount window department",
+      "notes": "Any FDIC-insured bank qualifies. Collateral must be pre-pledged before crisis hits. Eligible collateral includes loans, Treasuries, and agency MBS. Primary credit rate applies.",
+      "id": "discount_window",
+      "estimated_amount": 865380900
+    },
+    "brief": "# FEDERAL RESERVE DISCOUNT WINDOW APPLICATION BRIEF\n\n**Institution:** American First National Bank \u2014 Houston, TX  \n**Date:** [Insert Current Date]  \n**Prepared for:** CFO / Executive Management\n\n---\n\n## 1. Situation Summary\n\nAmerican First National Bank carries a risk score of 57.2/100 with a loan-to-deposit ratio of 96.6%, requiring immediate liquidity action despite adequate capital levels (Tier 1 at 13.2%). Our 52-day cash buffer provides runway, but current market conditions warrant securing backup liquidity access now rather than during active stress.\n\n## 2. Eligibility Statement\n\nAmerican First National Bank qualifies for Federal Reserve primary credit under Regulation A (12 CFR Part 201) as an FDIC-insured depository institution in sound financial condition, evidenced by Tier 1 capital exceeding the 6% regulatory minimum by 720 basis points.\n\n## 3. Amount Requested and Collateral Basis\n\n**Requested Access:** $865,380,900\n\nCollateral to be pre-pledged includes performing commercial and residential loans, U.S. Treasury securities, and agency MBS held in portfolio. Borrowing capacity calculated against current eligible collateral at applicable haircuts per Federal Reserve collateral margins.\n\n## 4. Submission Steps\n\n1. Contact the Federal Reserve Bank of Dallas discount window department this morning to confirm borrowing documentation and collateral pledge requirements.\n2. Complete and submit Operating Circular 10 agreements and board resolution authorizing discount window borrowing.\n3. Transmit collateral schedules and initiate pre-pledge of eligible assets through Fedwire or approved custodian.\n4. Obtain confirmed borrowing capacity letter from the Reserve Bank.\n\n## 5. Key Contact and Processing\n\n**Contact:** Federal Reserve Bank of Dallas, Discount Window Operations  \n**Application URL:** https://www.federalreserve.gov/monetarypolicy/discountrate.htm  \n**Estimated Processing:** 2 business days upon complete submission\n\n---\n\n*Submitted by the Office of the Chief Financial Officer*"
+  }
+]

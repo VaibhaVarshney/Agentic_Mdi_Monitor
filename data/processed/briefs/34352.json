@@ -1,0 +1,17 @@
+[
+  {
+    "program": {
+      "name": "Federal Reserve Discount Window",
+      "type": "loan",
+      "speed_days": 2,
+      "requires": [],
+      "max_pct_assets": 0.3,
+      "application_url": "https://www.federalreserve.gov/monetarypolicy/discountrate.htm",
+      "contact": "Your regional Federal Reserve Bank discount window department",
+      "notes": "Any FDIC-insured bank qualifies. Collateral must be pre-pledged before crisis hits. Eligible collateral includes loans, Treasuries, and agency MBS. Primary credit rate applies.",
+      "id": "discount_window",
+      "estimated_amount": 402492600
+    },
+    "brief": "**EMERGENCY LIQUIDITY APPLICATION BRIEF**\n\n**City First Bank, National Association \u2014 Federal Reserve Discount Window**\n\nPrepared for CFO Review | [Current Date]\n\n---\n\n**1. SITUATION SUMMARY**\n\nCity First Bank currently operates with a 4.0-day cash buffer against a 15-day warning threshold, with a loan-to-deposit ratio of 102.9% approaching the 110% danger level. Our Tier 1 capital ratio of 14.1% provides substantial regulatory cushion above the 6% minimum, positioning us as a creditworthy borrower for short-term liquidity support.\n\n**2. ELIGIBILITY STATEMENT**\n\nCity First Bank qualifies for Federal Reserve Discount Window primary credit under Federal Reserve Regulation A (12 CFR Part 201) as an FDIC-insured depository institution in generally sound financial condition, evidenced by our Tier 1 capital ratio exceeding regulatory minimums by 810 basis points.\n\n**3. AMOUNT REQUESTED AND COLLATERAL BASIS**\n\nRequested Amount: $402,492,600\n\nCollateral pool to be pre-pledged includes eligible assets per Regulation A: commercial loans from our community lending portfolio, U.S. Treasury securities, and agency mortgage-backed securities held in custody. Final advance rate subject to Federal Reserve collateral haircuts.\n\n**4. SUBMISSION STEPS**\n\n1. Contact the Federal Reserve Bank of Richmond discount window operations desk to confirm collateral pre-pledge requirements and initiate borrower documentation review.\n2. Complete and submit Operating Circular 10 borrowing authorization and corporate resolutions designating authorized signers.\n3. Transfer eligible collateral to the Reserve Bank's custodial account via Fedwire or DTC.\n4. Execute promissory note and request advance at primary credit rate.\n\n**5. KEY CONTACT AND PROCESSING**\n\n**Application URL:** https://www.federalreserve.gov/monetarypolicy/discountrate.htm\n\n**Contact:** Federal Reserve Bank of Richmond, Discount Window Department\n\n**Estimated Processing Time:** 2 days from completed documentation submission"
+  }
+]
