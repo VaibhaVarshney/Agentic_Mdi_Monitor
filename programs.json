@@ -1,0 +1,32 @@
+{
+  "discount_window": {
+    "name": "Federal Reserve Discount Window",
+    "type": "loan",
+    "speed_days": 2,
+    "requires": [],
+    "max_pct_assets": 0.30,
+    "application_url": "https://www.federalreserve.gov/monetarypolicy/discountrate.htm",
+    "contact": "Your regional Federal Reserve Bank discount window department",
+    "notes": "Any FDIC-insured bank qualifies. Collateral must be pre-pledged before crisis hits. Eligible collateral includes loans, Treasuries, and agency MBS. Primary credit rate applies."
+  },
+  "fhlb_advance": {
+    "name": "Federal Home Loan Bank Advance",
+    "type": "loan",
+    "speed_days": 1,
+    "requires": ["fhlb_member"],
+    "max_pct_mortgages": 0.80,
+    "application_url": "https://www.fhlbanks.com",
+    "contact": "Your district Federal Home Loan Bank membership services office",
+    "notes": "Fastest and cheapest liquidity option for member banks. Secured by residential mortgage loan portfolio. Terms range from overnight to 30 years. Rates typically below market."
+  },
+  "cdfi_fund": {
+    "name": "CDFI Fund Financial Assistance Grant",
+    "type": "grant",
+    "speed_days": 180,
+    "requires": ["cdfi_cert"],
+    "max_amount": 5000000,
+    "application_url": "https://www.cdfifund.gov/programs-training/programs",
+    "contact": "cdfifund@cdfi.treas.gov — 202-653-0421",
+    "notes": "Free capital — no repayment required. Requires active CDFI certification. Applications open annually, typically spring. Awards range from $500K to $5M. Best for long-term capital building, not immediate crisis."
+  }
+}

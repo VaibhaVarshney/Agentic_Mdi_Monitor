@@ -1,0 +1,17 @@
+[
+  {
+    "program": {
+      "name": "Federal Reserve Discount Window",
+      "type": "loan",
+      "speed_days": 2,
+      "requires": [],
+      "max_pct_assets": 0.3,
+      "application_url": "https://www.federalreserve.gov/monetarypolicy/discountrate.htm",
+      "contact": "Your regional Federal Reserve Bank discount window department",
+      "notes": "Any FDIC-insured bank qualifies. Collateral must be pre-pledged before crisis hits. Eligible collateral includes loans, Treasuries, and agency MBS. Primary credit rate applies.",
+      "id": "discount_window",
+      "estimated_amount": 964341000
+    },
+    "brief": "**FEDERAL RESERVE DISCOUNT WINDOW APPLICATION BRIEF**\n\n**Applicant:** Ponce Bank, National Association \u2014 Bronx, NY\n**Date:** [Insert Date]\n**Prepared for:** Chief Financial Officer\n\n---\n\n**1. Situation Summary**\n\nPonce Bank's loan-to-deposit ratio stands at 126.2%, significantly exceeding the 110% danger threshold, generating an overall risk score of 80.6/100 (Critical) requiring immediate liquidity intervention. Despite a strong Tier 1 capital ratio of 16.1% and 22-day cash buffer, the funding gap necessitates emergency access to stabilize the balance sheet.\n\n---\n\n**2. Eligibility Statement**\n\nPonce Bank qualifies for Federal Reserve primary credit under Regulation A (12 CFR Part 201) as an FDIC-insured depository institution in sound financial condition, evidenced by Tier 1 capital of 16.1%\u2014well above the 6% regulatory minimum.\n\n---\n\n**3. Amount Requested and Collateral Basis**\n\nRequesting access to **$964,341,000** through the Discount Window. Collateral will consist of pre-pledged eligible assets including commercial and residential loan portfolios, U.S. Treasury securities, and agency MBS held on balance sheet. Borrowing will be subject to the primary credit rate.\n\n---\n\n**4. Submission Steps**\n\n1. Contact the Federal Reserve Bank of New York Discount Window department by 10:00 AM to confirm collateral pre-pledge status and borrowing capacity.\n2. Submit Borrower-in-Custody agreement and updated collateral schedules via FedLine.\n3. Complete FR 2010 borrowing authorization form with board resolution attached.\n4. Execute primary credit advance request specifying amount and term.\n5. Confirm wire instructions and funding receipt within 2 business days.\n\n---\n\n**5. Key Contact and Processing**\n\n**Application URL:** https://www.federalreserve.gov/monetarypolicy/discountrate.htm\n**Contact:** Federal Reserve Bank of New York, Discount Window Operations\n**Estimated Processing Time:** 2 days from completed submission"
+  }
+]
