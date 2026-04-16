@@ -124,39 +124,43 @@ with col1:
             dh['REPDTE']     = dh['REPDTE'].astype(str)
             dh['RISK_SCORE'] = pd.to_numeric(dh['RISK_SCORE'], errors='coerce')
             dh = dh[
-                (dh['REPDTE'] >= '20040101') &
-                (dh['REPDTE'] <= '20091231')
+                (dh['REPDTE'] >= '19840101') &
+                (dh['REPDTE'] <= '20081231')
             ].dropna(subset=['RISK_SCORE'])
 
             if not dh.empty:
                 dh['REPDTE_dt'] = pd.to_datetime(dh['REPDTE'], format='%Y%m%d')
+                dh['RISK_SCORE'] = pd.to_numeric(dh['RISK_SCORE'], errors='coerce')
 
-                fig1 = go.Figure()
-                fig1.add_trace(go.Scatter(
-                    x=dh['REPDTE_dt'],
-                    y=dh['RISK_SCORE'],
-                    mode='lines+markers',
-                    name='Risk Score',
-                    line=dict(color='purple', width=3)
-                ))
-                fig1.add_hline(
-                    y=55, line_dash="dash", line_color="orange",
-                    annotation_text="HIGH threshold (55)"
-                )
-                fig1.add_vline(
-                    x='2009-08-14', line_dash="solid", line_color="red",
-                    annotation_text="FAILED Aug 2009"
-                )
-                fig1.update_layout(
-                    title="Dwelling House Risk Score 2004-2009",
-                    xaxis_title="Quarter",
-                    yaxis_title="Risk Score",
-                    height=400
-                )
-                st.plotly_chart(fig1, use_container_width=True)
+                try:
+                    fig1 = go.Figure()
+                    fig1.add_trace(go.Scatter(
+                        x=dh['REPDTE_dt'],
+                        y=dh['RISK_SCORE'],
+                        mode='lines+markers',
+                        name='Risk Score',
+                        line=dict(color='purple', width=3)
+                    ))
+                    fig1.add_hline(
+                        y=55, line_dash="dash", line_color="orange"
+                    )
+                    fig1.add_vline(
+                        x='2009-08-14', line_dash="solid", line_color="red"
+                    )
+                    fig1.update_layout(
+                        title="Dwelling House Risk Score 1984-2008",
+                        xaxis_title="Quarter",
+                        yaxis_title="Risk Score",
+                        height=400
+                    )
+                    st.plotly_chart(fig1, use_container_width=True)
+                except Exception as chart_error:
+                    st.error(f"Chart error: {chart_error}")
+                    st.info("Dwelling House was flagged HIGH 7 quarters before failure")
             else:
                 st.info("Dwelling House was flagged HIGH 7 quarters before failure")
-        except Exception:
+        except Exception as e:
+            st.error(f"Data processing error: {e}")
             st.info("Dwelling House was flagged HIGH 7 quarters before failure")
 
 with col2:
