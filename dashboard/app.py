@@ -6,7 +6,6 @@ Run with: streamlit run dashboard/app.py
 
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 import plotly.graph_objects as go
 import json
 import os
@@ -102,7 +101,21 @@ if not latest.empty:
             use_container_width=True
         ):
             st.session_state['selected_bank_from_table'] = row['Bank']
+            st.session_state['show_scroll_hint'] = True
             st.rerun()
+
+# Show prominent CTA when bank is selected from table
+if st.session_state.get('show_scroll_hint', False):
+    bank_name = st.session_state.get('selected_bank_from_table', 'Selected bank')
+    st.markdown(f"""
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 15px; margin: 20px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+    <h3 style="color: white; margin: 0 0 10px 0;">🏦 {bank_name} Selected</h3>
+    <p style="color: white; margin: 0; font-size: 16px;">
+    <strong>Scroll down to the "Bank Detail Panel" section below to generate federal program brief </strong>
+    </p>
+    </div>
+    """, unsafe_allow_html=True)
+    st.session_state['show_scroll_hint'] = False
 
 st.divider()
 
@@ -285,7 +298,7 @@ if not flagged_banks.empty:
     # Red-bordered container
     st.markdown(
         f"""
-        <div style="border:3px solid red;padding:15px;border-radius:10px;margin-bottom:10px;">
+        <div id="bank-detail-panel" style="border:3px solid red;padding:15px;border-radius:10px;margin-bottom:10px;">
         <h4>{selected_bank}</h4>
         <p><strong>City:</strong> {alert_row.get('CITY','')} &nbsp;
            <strong>State:</strong> {alert_row.get('STALP','')} &nbsp;
@@ -294,6 +307,11 @@ if not flagged_banks.empty:
         """,
         unsafe_allow_html=True
     )
+
+    # Show scroll hint if bank was selected from table
+    if st.session_state.get('show_scroll_hint', False):
+        st.success("👆 Scroll down to generate federal program brief for this bank")
+        st.session_state['show_scroll_hint'] = False
 
     # Warning strip
     st.error(
